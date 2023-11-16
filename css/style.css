@@ -1,0 +1,65 @@
+body {
+    font-family: monospace, 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/fondo.jpg");
+}
+
+#contenedorPantallaInicio,
+#contenedorReglasJuego,
+#contenedorIniciarPartida {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff88;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#nombreUsuario{
+    margin-bottom: 1rem;
+}
+#contenedorColores{
+    margin-top: 1rem;
+}
+#contenedorPantallaInicio h1,
+#contenedorIniciarPartida h1,
+#contenedorReglasJuego h1,
+#formularioNombreUsuario{
+font-size: 2vw;
+margin-top: 0;
+}
+#contenedorIniciarPartida h1,
+#formularioNombreUsuario,
+#contenedorColores h1{
+    font-size: 1vw;
+}
+
+
+#nombreUsuario{
+width: 80%;
+}
+
+#nivel{
+font-size: 1vw;
+}
+
+#botonIniciarPartida,
+#botonReglasJuego,
+#botonMenuPrincipal,
+#botonIniciarpartida{
+    font-family: monospace;
+    background-color: rgb(252, 207, 229);
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    font-size: 1vw;
+    margin: 1rem auto 0 auto;
+    border: 0;
+    cursor: pointer;
+
+}
+

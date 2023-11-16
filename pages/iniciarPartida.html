@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>
+      Nueva partida. Seleccionar Nonmbre de usuario y nivel de dificultad del
+      juego
+    </title>
+  </head>
+  <body>
+    <div id="contenedorIniciarPartida">
+      <h1>Ingresa tu nombre y selecciona el nivel</h1>
+      <form id="formularioNombreUsuario">
+        <label for="nombreUsuario">Nombre:</label>
+        <input type="text" id="nombreUsuario" name="nombreUsuario" required />
+        <div id="contenedorNivel">
+          <label for="nivel">Nivel:</label>
+          <select id="nivel" name="nivel">
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
+        </div>
+      </form>
+      <div id="contenedorColores">
+        <h1>Selecciona los colores para generar la combinación</h1>
+        <input type="color" id="color1" class="color" value="#3349FF" required />
+        <input type="color" id="color2" class="color" value="#33FF9C" required />
+        <input type="color" id="color3" class="color" value="#E3FF33" required />
+        <input type="color" id="color4" class="color" value="#FF5733" required />
+      </div>
+      <button type="button" id="botonIniciarpartida">Iniciar Juego</button>
+      <a href="../index.html" id="botonMenuPrincipal">Volver atrás</a>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
