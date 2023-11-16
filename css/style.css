@@ -60,6 +60,38 @@ font-size: 1vw;
     margin: 1rem auto 0 auto;
     border: 0;
     cursor: pointer;
-
 }
 
+#contenedorReglasJuego{
+    position: relative;
+}
+#contenedorReglasJuego p{
+    font-size: 1vw; 
+}
+.oculto{
+    display: none;
+}
+
+#flechaIzquierda{
+    position: absolute;
+    left:3%;
+    top: 50%;
+    width:5%;
+    transform: translate(0%,-50%);
+}
+#flechaDerecha{
+    position: absolute;
+    right:3%;
+    top: 50%;
+    width:5%;
+    transform: translate(0%,-50%);
+}
+#flechaIzquierda img{
+    transform: rotate(180deg);
+    width: 100%;
+    vertical-align: top;
+}
+#flechaDerecha img{
+    width: 100%;
+    vertical-align: top;
+}
