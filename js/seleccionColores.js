@@ -63,6 +63,10 @@ function generarColorMuestraAleatorio(){
 
 obtenerDatos();
 
+if(datos.usuario == "") {
+    window.location.href = "iniciarPartida.html";
+}
+
 document.getElementById("botonIniciarpartida").addEventListener("click", guardarDatos);
 
 actualizarNumeroColores();

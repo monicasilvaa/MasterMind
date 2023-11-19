@@ -11,6 +11,20 @@ function mostrarMensajeVictoria(){
     titulo.innerHTML = html;
 }
 
+function mostrarColores() {
+    const contenedorColores = document.getElementById("contenedorColores");
+    
+    for(let color of datos.combinacionGanadora){
+        let divColor = document.createElement("div");
+
+        divColor.classList = "bola huevo";
+        divColor.style.backgroundColor = color;
+
+        contenedorColores.append(divColor);
+    }
+}
+
 obtenerDatos();
 mostrarMensajeVictoria();
+mostrarColores();
 

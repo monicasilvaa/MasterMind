@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
     background-image: url("../img/fondo.jpg");
 }
 
@@ -16,14 +17,14 @@ body {
     width: 30%;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #ffffff88;
+    background-color: #ffffffDD;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #nombreUsuario{
     margin-bottom: 1rem;
 }
 #contenedorColores{
-    margin-top: 1rem;
+    width:100%;
 }
 #contenedorPantallaInicio h1,
 #contenedorIniciarPartida h1,
@@ -63,6 +64,10 @@ font-size: 1vw;
     cursor: pointer;
 }
 
+.boton{
+    display: inline-block;
+}
+
 #contenedorReglasJuego{
     position: relative;
 }
@@ -75,14 +80,14 @@ font-size: 1vw;
 
 #flechaIzquierda{
     position: absolute;
-    left:3%;
+    left:1%;
     top: 50%;
     width:5%;
     transform: translate(0%,-50%);
 }
 #flechaDerecha{
     position: absolute;
-    right:3%;
+    right:1%;
     top: 50%;
     width:5%;
     transform: translate(0%,-50%);
@@ -98,23 +103,40 @@ font-size: 1vw;
 }
 /* Tablero*/
 #tablero{
-    width: 80%;
-    height: 80vh;
+    width: 60%;
+    height: 80%;
     margin: 0 auto;
     background-color: brown;
     border-radius: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display:flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding-bottom:5%;
 }
+
+#panelLateral{
+    width:30%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #combinacionCorrecta,
 .filasIntentos{
-    width: 40vw;
-    height: 20wh;
     background-color: rgb(105, 38, 38);
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid black
+}
+#combinacionCorrecta{
+    width:60%;
+    margin-bottom:2%;
+}
+.filasIntentos{
+    width:60%;
 }
 .fila{
     display: flex;
@@ -124,14 +146,11 @@ font-size: 1vw;
 .filas{
     width: 100%;
     display:flex;
-    justify-content: space-around;
     align-items: center;
-    margin:auto 0 5% 0;
 }
 
 .filasVerificacion{
-    width: 20vw;
-    height: 20wh;
+    width: 30%;
     background-color: rgb(105, 38, 38);
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -154,14 +173,31 @@ font-size: 1vw;
 
 }
 
+#contenedorJuego{
+    width:50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #contenedorJuego #contenedorColores{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#contenedorIniciarPartida #contenedorColores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .caja-color{
-    width:10%;
-    padding-top:10%;
+    width:30%;
+    padding-top:25%;
+    cursor:pointer;
 }
     

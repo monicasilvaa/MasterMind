@@ -103,7 +103,7 @@ function comprobarResultado() {
 
     let ganador = true;
 
-    if(intentoActual > datos.intentos){
+    if(intentoActual > datos.intentos || (combinacionUsuario.length == 0 || combinacionUsuario.length < datos.colores.length)){
         return false;
     }
 
@@ -129,6 +129,9 @@ function comprobarResultado() {
         window.location.href = "ganador.html";
     }
     else if(intentoActual == datos.intentos && !ganador) {
+        datos.combinacionGanadora = combinacionGanadora;
+        sessionStorage.setItem("datosPartida", JSON.stringify(datos));
+
         window.location.href = "derrota.html";
     }
 
@@ -137,6 +140,14 @@ function comprobarResultado() {
 }
 
 obtenerDatos();
+
+if(datos.usuario == "") {
+    window.location.href = "iniciarPartida.html";
+}
+
+if(datos.colores.length == 0) {
+    window.location.href = "seleccionColores.html";
+}
 
 const btnValidar = document.getElementById("botonValidar");
 

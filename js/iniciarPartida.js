@@ -35,4 +35,6 @@ function guardarDatos(evento){
     }
 }
 
+sessionStorage.setItem("datosPartida", JSON.stringify(datos));
+
 document.getElementById("botonAceptar").addEventListener("click", (evento) => guardarDatos(evento));
