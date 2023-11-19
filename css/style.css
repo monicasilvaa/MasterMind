@@ -50,7 +50,8 @@ font-size: 1vw;
 #botonIniciarPartida,
 #botonReglasJuego,
 #botonMenuPrincipal,
-#botonIniciarpartida{
+#botonIniciarpartida,
+.boton{
     font-family: monospace;
     background-color: rgb(252, 207, 229);
     text-decoration: none;
@@ -151,5 +152,16 @@ font-size: 1vw;
     background-size: contain;
     background-repeat: no-repeat;
 
+}
+
+#contenedorJuego #contenedorColores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-color{
+    width:10%;
+    padding-top:10%;
 }
     
