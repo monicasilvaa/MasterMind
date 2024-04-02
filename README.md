@@ -1,5 +1,5 @@
 
-# Proyecto 3
+# MasterMind
 
 Creación de juego al estilo MasterMind.
 
@@ -15,13 +15,13 @@ Creación de juego al estilo MasterMind.
 Clona el proyecto
 
 ```bash
-  git clone https://github.com/monicasilvaa/proyecto3.git
+  git clone https://github.com/monicasilvaa/MasterMind.git
 ```
 
 Situate en el directorio del proyecto
 
 ```bash
-  cd proyecto3
+  cd MasterMind
 ```
 
 ## Uso
